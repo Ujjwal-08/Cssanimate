@@ -1,0 +1,26 @@
+body{
+    background-color:rgb(80, 78, 78);
+}
+
+.box {
+    background-color: white;
+    width: 10rem;
+    height:10rem;
+    position:relative;
+    animation-name: myanimation;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; /*reverse*/
+    animation-timing-function: linear;/*ease-in ease-out ease-in-out*/
+    animation-fill-mode: forwards;/*for keeping shape at last*/
+}
+
+@keyframes myanimation{
+   0% {background-color: white; left: 0px; top: 0px; border-radius: 0 0 0 0;}
+   20% {background-color: rgb(228, 11, 11);left: 300px; top: 0px; border-radius: 50% 0 0 0;}
+   40% {background-color: rgb(66, 7, 202);left: 300px; top:300px; border-radius: 50% 50% 0 0; }
+   60% {background-color: rgb(42, 202, 64);left: 0px; top: 300px; border-radius: 50% 50% 0 50%; }
+   80% {background-color: rgb(236, 58, 13);left: 0px; top: 0px; border-radius: 50% 50% 50% 50%; }
+   100% {background-color: white;border-radius: 0% 0% 0% 0%;}
+}
